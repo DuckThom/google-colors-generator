@@ -1,0 +1,6 @@
+#!/usr/bin/env php
+<?php
+
+define('APP_START', microtime());
+
+require __DIR__ . '/bootstrap/app.php';

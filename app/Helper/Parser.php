@@ -1,0 +1,40 @@
+<?php namespace App\Helper;
+
+use Illuminate\Filesystem\Filesystem;
+use Symfony\Component\DomCrawler\Crawler;
+use App\Object\ColorBlock;
+use App\Object\Color;
+
+class Parser {
+
+    /**
+     * Parse the downloaded HTML file
+     *
+     * @return array Array with ColorBlocks
+     */
+    public static function parseDownload(): array
+    {
+        $colors = [];
+        $fs     = new Filesystem();
+        $html   = $fs->get(storage_path('source.html'));
+
+        $crawler = new Crawler($html);
+
+        $crawler->filter('.color-group')->each(function (Crawler $node, $i) use(&$colors) {
+            preg_match("/([a-zA-Z\s]+)/", $node->text(), $matches);
+            $name = trim($matches[1]);
+            preg_match_all("/([0-9]+)(\#[0-9a-zA-Z]+)/", $node->text(), $matches);
+
+            $cb = new ColorBlock($name);
+
+            for ($i = 0; $i < count($matches[1]) && $i < 10; $i++) {
+                $cb->addColor(new Color($matches[1][$i], $matches[2][$i]));
+            }
+
+            $colors[] = $cb;
+        });
+
+        return $colors;
+    }
+
+}
