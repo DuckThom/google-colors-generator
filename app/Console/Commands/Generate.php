@@ -24,6 +24,9 @@ class Generate extends Command {
      */
     protected $description = 'Generate a style file in the given type [Default: scss]';
 
+    /**
+     * Configure the command
+     */
     protected function configure()
     {
         $this->setName($this->name);
@@ -37,12 +40,21 @@ class Generate extends Command {
         );
     }
 
+    /**
+     * Execute the command
+     *
+     * @param InputInterface $input
+     * @param OutputInterface $output
+     *
+     * @return void
+     */
     protected function execute(InputInterface $input, OutputInterface $output)
     {
         $type = $input->getArgument('type');
 
         if ($type === 'scss') {
             SCSSGenerator::generate();
+            $output->writeln("<info>Wrote the SCSS file to: " . storage_path('output.scss') . "</info>");
         }
     }
 }

@@ -3,4 +3,7 @@
 
 define('APP_START', microtime());
 
+/**
+ * Load the app
+ */
 require __DIR__ . '/bootstrap/app.php';

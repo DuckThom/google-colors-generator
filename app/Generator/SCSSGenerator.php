@@ -12,8 +12,6 @@ class SCSSGenerator {
 
     /**
      * Generate the SCSS file
-     *
-     * @return bool
      */
     public static function generate()
     {
