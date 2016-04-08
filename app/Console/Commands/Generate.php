@@ -7,6 +7,7 @@ use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Output\OutputInterface;
 
 use App\Generator\SCSSGenerator;
+use App\Generator\LESSGenerator;
 
 class Generate extends Command {
 
@@ -55,6 +56,9 @@ class Generate extends Command {
         if ($type === 'scss') {
             SCSSGenerator::generate();
             $output->writeln("<info>Wrote the SCSS file to: " . storage_path('output.scss') . "</info>");
+        } elseif ($type === 'less') {
+            LESSGenerator::generate();
+            $output->writeln("<info>Wrote the LESS file to: " . storage_path('output.less') . "</info>");
         }
     }
 }
