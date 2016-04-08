@@ -10,6 +10,11 @@ use Illuminate\Filesystem\Filesystem;
  */
 class SCSSGenerator {
 
+    /**
+     * Generate the SCSS file
+     *
+     * @return bool
+     */
     public static function generate()
     {
         $dl = new Downloader("https://www.google.com/design/spec/style/color.html");
@@ -22,7 +27,7 @@ class SCSSGenerator {
 
         foreach ($colors as $name => $color_block) {
 
-            if (count($color_block->getColors()) === 10) {
+            if (count($color_block->getColors()) >= 10) {
                 $text .= '// ----- ' . $color_block->getName() . ' ----- \\\\' ."\r\n";
 
                 foreach ($color_block->getColors() as $color) {
@@ -34,7 +39,6 @@ class SCSSGenerator {
 
         }
 
-        //var_dump($text);
         $fs->put($path, $text);
     }
 

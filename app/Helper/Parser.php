@@ -23,11 +23,11 @@ class Parser {
         $crawler->filter('.color-group')->each(function (Crawler $node, $i) use(&$colors) {
             preg_match("/([a-zA-Z\s]+)/", $node->text(), $matches);
             $name = trim($matches[1]);
-            preg_match_all("/([0-9]+)(\#[0-9a-zA-Z]+)/", $node->text(), $matches);
+            preg_match_all("/(A?[0-9]+)(\#[0-9a-zA-Z]+)/", $node->text(), $matches);
 
-            $cb = new ColorBlock($name);
+            $cb = ColorBlock::make($name);
 
-            for ($i = 0; $i < count($matches[1]) && $i < 10; $i++) {
+            for ($i = 0; $i < count($matches[1]); $i++) {
                 $cb->addColor(new Color($matches[1][$i], $matches[2][$i]));
             }
 
