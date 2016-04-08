@@ -3,6 +3,7 @@
     "description": "Generate an up-to-date file with every color from the Google Color scheme located at https://www.google.com/design/spec/style/color.html",
     "type": "project",
     "require": {
+        "php": ">=7.0",
         "symfony/dom-crawler": "^3.0",
         "illuminate/filesystem": "^5.2",
         "symfony/css-selector": "^3.0",
