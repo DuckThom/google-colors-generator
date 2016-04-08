@@ -59,6 +59,8 @@ class Generate extends Command {
         } elseif ($type === 'less') {
             LESSGenerator::generate();
             $output->writeln("<info>Wrote the LESS file to: " . storage_path('output.less') . "</info>");
+        } else {
+            $output->writeln("<error>Unknown file type {$type}</error>");
         }
     }
 }
