@@ -12,7 +12,7 @@ The following color "strengths" have been added:
 ## Usage
 ```
 google-colors-scss/ $ php console                                                                                                                                                                               Luna  1:03
-Google Color stylesheet variable generator version 0.1
+Google Color stylesheet variable generator version 0.2
 
 Usage:
   command [options] [arguments]
