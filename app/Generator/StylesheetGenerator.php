@@ -1,26 +1,38 @@
 <?php namespace App\Generator;
 
-use App\Helper\Parser;
-use App\Helper\Downloader;
+use App\Helpers\Parser;
+use App\Helpers\Downloader;
 use Illuminate\Filesystem\Filesystem;
+use App\Exceptions\UndefinedTypeException;
 
 /**
  * Class SCSSGenerator
  * @package App\Generator
  */
-class LESSGenerator {
+class StylesheetGenerator {
 
     /**
-     * Generate the LESS file
+     * Generate the SCSS file
      */
-    public static function generate()
+    public static function generate(string $type)
     {
+        switch ($type) {
+            case 'scss':
+                $var_sign = '$';
+                break;
+            case 'less':
+                $var_sign = '@';
+                break;
+            default:
+                throw new UndefinedTypeException($type);
+        }
+
         $dl = new Downloader("https://www.google.com/design/spec/style/color.html");
         $dl->run(storage_path());
 
         $fs     = new Filesystem();
         $colors = Parser::parseDownload();
-        $path   = storage_path('output.less');
+        $path   = storage_path('output.' . strtolower($type));
         $text   = "";
 
         foreach ($colors as $name => $color_block) {
@@ -29,7 +41,7 @@ class LESSGenerator {
                 $text .= '// ----- ' . $color_block->getName() . ' ----- \\\\' ."\r\n";
 
                 foreach ($color_block->getColors() as $color) {
-                    $text .= "@" . str_replace(" ", "-", strtolower($color_block->getName())) . "-" . $color->getWeight() . ": " . $color->getColor() . ";\r\n";
+                    $text .= $var_sign . str_replace(" ", "-", strtolower($color_block->getName())) . "-" . $color->getWeight() . ": " . $color->getColor() . ";\r\n";
                 }
 
                 $text .= "\r\n";

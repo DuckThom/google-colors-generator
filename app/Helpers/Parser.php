@@ -1,10 +1,14 @@
-<?php namespace App\Helper;
+<?php namespace App\Helpers;
 
 use Illuminate\Filesystem\Filesystem;
 use Symfony\Component\DomCrawler\Crawler;
 use App\Object\ColorBlock;
 use App\Object\Color;
 
+/**
+ * Class Parser
+ * @package App\Helpers
+ */
 class Parser {
 
     /**

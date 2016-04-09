@@ -6,9 +6,12 @@ use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Output\OutputInterface;
 
-use App\Generator\SCSSGenerator;
-use App\Generator\LESSGenerator;
+use App\Generator\StylesheetGenerator;
 
+/**
+ * Class Generate
+ * @package App\Console\Commands
+ */
 class Generate extends Command {
 
     /**
@@ -53,12 +56,9 @@ class Generate extends Command {
     {
         $type = $input->getArgument('type');
 
-        if ($type === 'scss') {
-            SCSSGenerator::generate();
-            $output->writeln("<info>Wrote the SCSS file to: " . storage_path('output.scss') . "</info>");
-        } elseif ($type === 'less') {
-            LESSGenerator::generate();
-            $output->writeln("<info>Wrote the LESS file to: " . storage_path('output.less') . "</info>");
+        if ($type === 'scss' || $type === 'less') {
+            StylesheetGenerator::generate($type);
+            $output->writeln("<info>Wrote the " . strtoupper($type) . " file to: " . storage_path("output." . strtolower($type)) . "</info>");
         } else {
             $output->writeln("<error>Unknown file type {$type}</error>");
         }

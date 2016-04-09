@@ -1,5 +1,9 @@
 <?php namespace App\Object;
 
+/**
+ * Class ColorBlock
+ * @package App\Object
+ */
 class ColorBlock {
 
     private $name;

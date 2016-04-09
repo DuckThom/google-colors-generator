@@ -1,4 +1,4 @@
-<?php namespace App\Helper;
+<?php namespace App\Helpers;
 
 use Illuminate\Filesystem\Filesystem;
 

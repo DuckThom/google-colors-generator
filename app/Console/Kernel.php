@@ -1,5 +1,9 @@
 <?php namespace App\Console;
 
+/**
+ * Class Kernel
+ * @package App\Console
+ */
 class Kernel {
 
     /**

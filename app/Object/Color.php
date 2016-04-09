@@ -1,5 +1,9 @@
 <?php namespace App\Object;
 
+/**
+ * Class Color
+ * @package App\Object
+ */
 class Color {
 
     private $weight;
