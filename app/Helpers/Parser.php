@@ -14,13 +14,14 @@ class Parser {
     /**
      * Parse the downloaded HTML file
      *
+     * @param  string  $sourcePath
      * @return array Array with ColorBlocks
      */
-    public static function parseDownload(): array
+    public static function parseDownload(string $sourcePath = null): array
     {
         $colors = [];
         $fs     = new Filesystem();
-        $html   = $fs->get(storage_path('source.html'));
+        $html   = $fs->get($sourcePath ?: storage_path('source.html'));
 
         $crawler = new Crawler($html);
 
