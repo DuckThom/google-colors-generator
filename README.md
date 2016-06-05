@@ -1,6 +1,8 @@
 # Google Colors Generator
 Generate a SCSS/LESS file with the main colors from https://www.google.com/design/spec/style/color.html as variables.
 
+[![Build Status](https://travis-ci.org/DuckThom/google-colors-generator.svg?branch=master)](https://travis-ci.org/DuckThom/google-colors-generator)
+
 The following color "strengths" have been added:
 - 50, 100, 200, 300, 400, 500, 600, 700, 800, 900
 - A100, A200, A400, A700
