@@ -43,5 +43,5 @@ Style files will be written to `storage/colors.<type>` ie. `storage/colors.scss`
 
 ## Contributions
 
-If you see something that could be improved, feel free to send a Pull Request.
+If you see something that could be improved, feel free to send a Pull Request on the `master` branch.
 Please use [PSR-2](http://www.php-fig.org/psr/psr-2/) where possible.
