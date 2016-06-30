@@ -1,4 +1,4 @@
-# Google Colors Generator [![Build Status](https://travis-ci.org/DuckThom/google-colors-generator.svg?branch=master)](https://travis-ci.org/DuckThom/google-colors-generator)
+# Google Colors Generator [![Build Status](https://travis-ci.org/DuckThom/google-colors-generator.svg?branch=master)](https://travis-ci.org/DuckThom/google-colors-generator) [![StyleCI](https://styleci.io/repos/55814616/shield)](https://styleci.io/repos/55814616)
 Generate a SCSS/LESS file with the main colors from https://material.google.com/style/color.html as variables.
 
 The following color "strengths" have been added:
