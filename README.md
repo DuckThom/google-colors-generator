@@ -1,5 +1,5 @@
 # Google Colors Generator
-Generate a SCSS/LESS file with the main colors from https://www.google.com/design/spec/style/color.html as variables.
+Generate a SCSS/LESS file with the main colors from https://material.google.com/style/color.html as variables.
 
 [![Build Status](https://travis-ci.org/DuckThom/google-colors-generator.svg?branch=master)](https://travis-ci.org/DuckThom/google-colors-generator)
 
