@@ -1,14 +1,13 @@
 language: php
-
 php:
-  - 7.0
-
+- 7.0
 sudo: false
-
 before_install:
-  - composer self-update
-
+- composer self-update
 install:
-  - composer install --no-interaction
-
+- composer install --no-interaction
 script: vendor/bin/phpunit
+notifications:
+  slack:
+    rooms:
+      secure: TdSMHfPWuESxzP+IbMOglSLOldAr4MfAAWvz7eAW4LriF9Y2WLcixqJTNjQ7hOM+gAEOW6ICgS2ZKtbYeWMRZD68VDbE9dCvhqMegcYzW0MwnkWlf21Hmnfa0hcLNCAoo35yE5LgQHdYuOx9Zudxj/o8VUXivkTbSe+L+SKV7sKry4gHvxMDp06wWLdfD8IU5P73c97Na/rJKElLABJSTJfgFiluvH6dDqUnnhmJ7mvau3qhYoRbHBF00Qx0CcdmgmiRhrBhPh4yA9ZGLMCRmpFWVjZhtyY4IbIj8FH0xY/Oloc/EvCowagiQC9qnwWO9P+nXBzZPQWlD3yMxYeA6wx/OEwrMUZi/2D9ZLTzX6+4K0Owd1i40s7CTkpb4kOIUIOxUm756Jw3gWl8Y43OA+y95LFYIsmkNIbXzrIvvxSFE2m/bnjZI3ABp4VhQppgc81xc5TE0fGFqhol0wQvaOth255JyBAZ+NrIp7PGAMyF0GiE0/dDyyMVzDk59Ox1IX/uhv+XpnrfNJchMJrO78uqKqKtvIJT2ykf9N3CRThNkunrq7FmYjYcO1jC0ySRf7Y4az1d9CaeDhBvuBj9cw786PJsl29bAf9NVCcerjJ3/h8KU//t5jAfWZVt6NW6mite1wR4k9EixVLwfxu8Np3bUU2PbuP+b1nruPJeZPo=
