@@ -14,7 +14,7 @@ use Symfony\Component\Console\Application as BaseApplication;
 /**
  * Class Application
  */
-class Application extends BaseApplication
+class app extends BaseApplication
 {
     /**
      * Package name

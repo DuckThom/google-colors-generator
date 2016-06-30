@@ -2,7 +2,8 @@
 
 namespace App\Helpers;
 
-class Console {
+class Console
+{
 
     /**
      * Run a console command
@@ -37,5 +38,4 @@ class Console {
 
         return $command;
     }
-
 }

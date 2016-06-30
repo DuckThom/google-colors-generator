@@ -9,7 +9,8 @@ use App\Object\Color;
  * Class Parser
  * @package App\Helpers
  */
-class Parser {
+class Parser
+{
 
     /**
      * Parse the downloaded HTML file
@@ -26,7 +27,7 @@ class Parser {
         $crawler = new Crawler($html);
 
         // Loop through the html block with the CSS class .color-group
-        $crawler->filter('.color-group')->each(function (Crawler $node) use(&$colors) {
+        $crawler->filter('.color-group')->each(function (Crawler $node) use (&$colors) {
             // Match the raw name
             preg_match("/([a-zA-Z\s]+)/", $node->text(), $matches);
             $name = trim($matches[1]);
@@ -49,5 +50,4 @@ class Parser {
 
         return $colors;
     }
-
 }

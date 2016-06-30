@@ -10,7 +10,8 @@ use Illuminate\Contracts\Filesystem\FileNotFoundException;
  * Class Generator
  * @package App\Generator
  */
-class Generator {
+class Generator
+{
 
     /**
      * Downloader instance
@@ -132,5 +133,4 @@ class Generator {
             unlink($filePath);
         }
     }
-
 }

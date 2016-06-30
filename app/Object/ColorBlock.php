@@ -4,7 +4,8 @@
  * Class ColorBlock
  * @package App\Object
  */
-class ColorBlock {
+class ColorBlock
+{
 
     /**
      * Name of the color
@@ -68,5 +69,4 @@ class ColorBlock {
     {
         return $this->name;
     }
-
 }

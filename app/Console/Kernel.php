@@ -4,7 +4,8 @@
  * Class Kernel
  * @package App\Console
  */
-class Kernel {
+class Kernel
+{
 
     /**
      * Store the commands for auto-loading
@@ -14,5 +15,4 @@ class Kernel {
     public static $commands = [
         Commands\GenerateStylesheet::class,
     ];
-
 }

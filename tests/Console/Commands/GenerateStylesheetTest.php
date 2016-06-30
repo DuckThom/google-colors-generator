@@ -7,7 +7,6 @@ use Tests\TestCase;
 
 class GenerateStylesheetTest extends \PHPUnit_Framework_TestCase
 {
-
     public function testSassGeneration()
     {
         $file = storage_path('colors.sass');
@@ -37,5 +36,4 @@ class GenerateStylesheetTest extends \PHPUnit_Framework_TestCase
         $this->assertTrue(file_exists($file));
         $this->assertTrue(file_get_contents($file) !== '');
     }
-
 }

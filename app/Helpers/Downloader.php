@@ -8,7 +8,8 @@ use Illuminate\Filesystem\Filesystem;
  * Class Downloader
  * @package App\Helper
  */
-class Downloader {
+class Downloader
+{
 
     /**
      * Path of the file to be downloaded

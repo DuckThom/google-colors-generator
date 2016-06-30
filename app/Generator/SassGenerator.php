@@ -10,7 +10,8 @@ use App\Exceptions\UndefinedTypeException;
  * Class SassGenerator
  * @package App\Generator
  */
-class SassGenerator extends Generator {
+class SassGenerator extends Generator
+{
 
     /**
      * Generate the Scss/Sass file
