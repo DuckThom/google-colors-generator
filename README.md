@@ -13,14 +13,16 @@ The following color "strengths" have been added:
 
 ## Usage
 ```
-$ php console generate:style <type>
-                                                                                                                                                                      Luna  1:03
-Google Color stylesheet variable generator version 0.2
-
+$ php console generate:style --help
 Usage:
-  command [options] [arguments]
+  generate:style [options] [--] <type>
+
+Arguments:
+  type                  Which style type should we generate?
 
 Options:
+      --cache           Do not download the source HTML file with curl
+      --pretend         Do not write files
   -h, --help            Display this help message
   -q, --quiet           Do not output any message
   -V, --version         Display this application version
@@ -29,8 +31,6 @@ Options:
   -n, --no-interaction  Do not ask any interactive question
   -v|vv|vvv, --verbose  Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug
 
-Available commands:
-  help            Displays help for a command
-  list            Lists commands
- generate
-  generate:style  Generate a style file in the given type [Default: scss]
+Help:
+ Generate a style file in the given type
+
