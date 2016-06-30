@@ -12,7 +12,8 @@ use App\Generator\SassGenerator;
  * Class Generate
  * @package App\Console\Commands
  */
-class GenerateStylesheet extends Command {
+class GenerateStylesheet extends Command
+{
 
     /**
      * The name of the command
