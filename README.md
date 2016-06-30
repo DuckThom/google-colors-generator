@@ -1,7 +1,5 @@
-# Google Colors Generator
+# Google Colors Generator [![Build Status](https://travis-ci.org/DuckThom/google-colors-generator.svg?branch=master)](https://travis-ci.org/DuckThom/google-colors-generator)
 Generate a SCSS/LESS file with the main colors from https://material.google.com/style/color.html as variables.
-
-[![Build Status](https://travis-ci.org/DuckThom/google-colors-generator.svg?branch=master)](https://travis-ci.org/DuckThom/google-colors-generator)
 
 The following color "strengths" have been added:
 - 50, 100, 200, 300, 400, 500, 600, 700, 800, 900
@@ -33,4 +31,13 @@ Options:
 
 Help:
  Generate a style file in the given type
+```
 
+## Output
+
+![](http://lunamoonfang.nl/s/jYsi2/full)
+
+## Contributions
+
+If you see something that could be improved, feel free to send a Pull Request.
+Please use [PSR-2](http://www.php-fig.org/psr/psr-2/) where possible.
