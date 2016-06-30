@@ -5,10 +5,13 @@ The following color "strengths" have been added:
 - 50, 100, 200, 300, 400, 500, 600, 700, 800, 900
 - A100, A200, A400, A700
 
+## Requirements
+- PHP 5.5.9 or higher
+
 ## Installation
 - Clone the repository `git clone https://github.com/DuckThom/google-colors-generator`
 - Run `composer install` from the repository root folder
-
+ 
 ## Usage
 ```
 $ php console generate:style --help
@@ -34,6 +37,7 @@ Help:
 ```
 
 ## Output
+Style files will be written to `storage/colors.<type>` ie. `storage/colors.scss`
 
 ![](http://lunamoonfang.nl/s/jYsi2/full)
 
