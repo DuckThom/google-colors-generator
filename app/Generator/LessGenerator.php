@@ -10,7 +10,8 @@ use App\Exceptions\UndefinedTypeException;
  * Class LessGenerator
  * @package App\Generator
  */
-class LessGenerator extends Generator {
+class LessGenerator extends Generator
+{
 
     /**
      * Generate the Less file

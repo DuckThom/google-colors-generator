@@ -4,7 +4,8 @@
  * Class Color
  * @package App\Object
  */
-class Color {
+class Color
+{
 
     /**
      * Strength of the color
@@ -58,5 +59,4 @@ class Color {
     {
         return $this->weight;
     }
-
 }
