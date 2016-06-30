@@ -6,10 +6,21 @@
  */
 class ColorBlock {
 
+    /**
+     * Name of the color
+     *
+     * @var string
+     */
     private $name;
+
+    /**
+     * Array containing Color instances
+     *
+     * @var array
+     */
     private $colors = [];
 
-    public function __construct(string $name)
+    public function __construct($name)
     {
         $this->name = $name;
     }
@@ -20,7 +31,7 @@ class ColorBlock {
      * @param string $block_name
      * @return ColorBlock
      */
-    public static function make(string $block_name): self
+    public static function make($block_name)
     {
         return new self($block_name);
     }
@@ -31,7 +42,7 @@ class ColorBlock {
      * @param Color $color
      * @return array
      */
-    public function addColor(Color $color): array
+    public function addColor(Color $color)
     {
         $this->colors[] = $color;
 
@@ -43,7 +54,7 @@ class ColorBlock {
      *
      * @return array
      */
-    public function getColors(): array
+    public function getColors()
     {
         return $this->colors;
     }
@@ -53,7 +64,7 @@ class ColorBlock {
      *
      * @return string
      */
-    public function getName(): string
+    public function getName()
     {
         return $this->name;
     }

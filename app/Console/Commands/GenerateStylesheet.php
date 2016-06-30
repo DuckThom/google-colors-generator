@@ -1,32 +1,32 @@
 <?php namespace App\Console\Commands;
 
+use App\Generator\LessGenerator;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Output\OutputInterface;
-
-use App\Generator\StylesheetGenerator;
+use App\Generator\SassGenerator;
 
 /**
  * Class Generate
  * @package App\Console\Commands
  */
-class Generate extends Command {
+class GenerateStylesheet extends Command {
 
     /**
      * The name of the command
      *
-     * @var
+     * @var string
      */
     protected $name = 'generate:style';
 
     /**
      * The description of what the command should do
      *
-     * @var
+     * @var string
      */
-    protected $description = 'Generate a style file in the given type [Default: scss]';
+    protected $description = 'Generate a style file in the given type';
 
     /**
      * Configure the command
@@ -38,10 +38,12 @@ class Generate extends Command {
 
         $this->addArgument(
             'type',
-            InputArgument::OPTIONAL,
-            'Which style type should we generate?',
-            'scss'
+            InputArgument::REQUIRED,
+            'Which style type should we generate?'
         );
+
+        $this->addOption('cache', null, null, 'Do not download the source HTML file with curl');
+        $this->addOption('pretend', null, null, 'Do not write files');
     }
 
     /**
@@ -49,18 +51,24 @@ class Generate extends Command {
      *
      * @param InputInterface $input
      * @param OutputInterface $output
-     *
      * @return void
      */
     protected function execute(InputInterface $input, OutputInterface $output)
     {
-        $type = $input->getArgument('type');
-
-        if ($type === 'scss' || $type === 'less') {
-            StylesheetGenerator::generate($type);
-            $output->writeln("<info>Wrote the " . strtoupper($type) . " file to: " . storage_path("output." . strtolower($type)) . "</info>");
-        } else {
-            $output->writeln("<error>Unknown file type {$type}</error>");
+        $type       = $input->getArgument('type');
+        $pretend    = $input->getOption('pretend');
+        $cache      = $input->getOption('cache');
+        
+        if ($type === 'sass' || $type === 'scss') {
+            SassGenerator::generate($type, [
+                'pretend' => $pretend,
+                'cache' => $cache
+            ]);
+        } elseif ($type === 'less') {
+            LessGenerator::generate($type, [
+                'pretend' => $pretend,
+                'cache' => $cache
+            ]);
         }
     }
 }

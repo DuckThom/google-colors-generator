@@ -6,11 +6,11 @@
 }">
   <head>
     <meta charset="utf-8">
-    <link href="/design/spec/static/css/main.css" rel="stylesheet" />
-    <link href="/design/spec/static/css/print.css" rel="stylesheet" />
+    <link href="/static/css/main.css" rel="stylesheet" />
+    <link href="/static/css/print.css" rel="stylesheet" />
         <link href='https://fonts.googleapis.com/css?family=RobotoDraft:400,500,700,400italic' rel='stylesheet' type='text/css'>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="shortcut icon" href="/design/spec/static/images/favicon.ico?v1">
+    <link rel="shortcut icon" href="/static/images/favicon.ico?v1">
     <meta name="viewport" content="initial-scale=1, width=device-width"/>
     <meta name="keywords" content=""/>
     <title>Color - Style - Google design guidelines</title>
@@ -37,19 +37,19 @@
     </DataObject>
 </PageMap>
 -->
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-51798601-1', 'auto');
-  ga('send', 'pageview');
-</script>
   </head>
 
   <body class="site-material_ext_publish section-style first-chapter color-teal qp-ui" data-qp-ui="{ 'Mask': {} }">
-    <header class="qp-ui" data-qp-ui="{
+        <!-- Google Tag Manager -->
+      <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-NHRPF8"
+      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+      <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-NHRPF8');</script>
+      <!-- End Google Tag Manager -->
+        <header class="qp-ui" data-qp-ui="{
   'Peekaboo': {
     'mobile': 72,
     'desktop-sm': 72,
@@ -74,7 +74,7 @@
   <button class="hamburger-button qp-ui" data-qp-ui="{ 'SideNavToggle': {} }" role="tab"><i class="material-icons material-spec-icon" title="Show navigation">menu</i></button>
 </nav>
 
-<form id="search-form" action="/design/spec/search.html" method="GET">
+<form id="search-form" action="/search.html" method="GET">
   <div class="search-widget qp-ui" data-qp-ui="{ 'SearchInput': {} }">
     <button class="search-button"><i class="material-icons">search</i></button>
     <button class="search-close-button"><i class="material-icons">close</i></button>
@@ -88,183 +88,201 @@
     
 <div id="side-nav" class="qp-ui" data-qp-ui="{ 'SideNavDrawer': {} }">
   <div class="side-nav-wrapper">
-    <span id="logo"><img src="/design/spec/static/images/nav_google_logo.svg" alt="Logo"/></span>
+    <span id="logo"><img src="/static/images/nav_google_logo.svg" alt="Logo"/></span>
     <nav>
       <dl>
                 <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">Material design
                         </dt>
         <dd>
-                    <a class="" href="/design/spec/material-design/introduction.html">Introduction
+                    <a class="" href="/material-design/introduction.html">Introduction
                     </a>
                   </dd>
                 <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">What is material?
                 </dt>
         <dd>
-                    <a class="" href="/design/spec/what-is-material/environment.html">Environment
+                    <a class="" href="/what-is-material/environment.html">Environment
                     </a>
-                    <a class="" href="/design/spec/what-is-material/material-properties.html">Material properties
+                    <a class="" href="/what-is-material/material-properties.html">Material properties
                     </a>
-                    <a class="" href="/design/spec/what-is-material/elevation-shadows.html">Elevation and shadows
+                    <a class="" href="/what-is-material/elevation-shadows.html">Elevation and shadows
                     </a>
                   </dd>
-                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">Animation
-                        </dt>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">Motion
+                </dt>
         <dd>
-                    <a class="" href="/design/spec/animation/authentic-motion.html">Authentic motion
+                    <a class="" href="/motion/material-motion.html">Material motion
                     </a>
-                    <a class="" href="/design/spec/animation/responsive-interaction.html">Responsive interaction
+                    <a class="" href="/motion/duration-easing.html">Duration and easing
                     </a>
-                    <a class="" href="/design/spec/animation/meaningful-transitions.html">Meaningful transitions
+                    <a class="" href="/motion/movement.html">Movement
                     </a>
-                    <a class="" href="/design/spec/animation/delightful-details.html">Delightful details
+                    <a class="" href="/motion/transforming-material.html">Transforming material
+                    </a>
+                    <a class="" href="/motion/choreography.html">Choreography
+                    </a>
+                    <a class="" href="/motion/creative-customization.html">Creative customization
                     </a>
                   </dd>
                 <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': true }">Style
                 </dt>
         <dd>
-                    <a class="nav_selected" href="/design/spec/style/color.html">Color
+                    <a class="nav_selected" href="/style/color.html">Color
                     </a>
-                    <a class="" href="/design/spec/style/icons.html">Icons
+                    <a class="" href="/style/icons.html">Icons
                     </a>
-                    <a class="" href="/design/spec/style/imagery.html">Imagery
+                    <a class="" href="/style/imagery.html">Imagery
                     </a>
-                    <a class="" href="/design/spec/style/typography.html">Typography
+                    <a class="" href="/style/typography.html">Typography
                     </a>
-                    <a class="" href="/design/spec/style/writing.html">Writing
+                    <a class="" href="/style/writing.html">Writing
                     </a>
                   </dd>
                 <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">Layout
                 </dt>
         <dd>
-                    <a class="" href="/design/spec/layout/principles.html">Principles
+                    <a class="" href="/layout/principles.html">Principles
                     </a>
-                    <a class="" href="/design/spec/layout/units-measurements.html">Units and measurements
+                    <a class="" href="/layout/units-measurements.html">Units and measurements
                     </a>
-                    <a class="" href="/design/spec/layout/metrics-keylines.html">Metrics &amp; keylines
+                    <a class="" href="/layout/metrics-keylines.html">Metrics &amp; keylines
                     </a>
-                    <a class="" href="/design/spec/layout/structure.html">Structure
+                    <a class="" href="/layout/structure.html">Structure
                     </a>
-                    <a class="" href="/design/spec/layout/responsive-ui.html">Responsive UI
+                    <a class="" href="/layout/responsive-ui.html">Responsive UI
                     </a>
-                    <a class="" href="/design/spec/layout/split-screen.html">Split screen
+                    <a class="" href="/layout/split-screen.html">Split screen
                     </a>
                   </dd>
                 <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">Components
                 </dt>
         <dd>
-                    <a class="" href="/design/spec/components/bottom-navigation.html">Bottom navigation
+                    <a class="" href="/components/bottom-navigation.html">Bottom navigation
                     </a>
-                    <a class="" href="/design/spec/components/bottom-sheets.html">Bottom sheets
+                    <a class="" href="/components/bottom-sheets.html">Bottom sheets
                     </a>
-                    <a class="" href="/design/spec/components/buttons.html">Buttons
+                    <a class="" href="/components/buttons.html">Buttons
                     </a>
-                    <a class="" href="/design/spec/components/buttons-floating-action-button.html">Buttons: Floating Action Button
+                    <a class="" href="/components/buttons-floating-action-button.html">Buttons: Floating Action Button
                     </a>
-                    <a class="" href="/design/spec/components/cards.html">Cards
+                    <a class="" href="/components/cards.html">Cards
                     </a>
-                    <a class="" href="/design/spec/components/chips.html">Chips
+                    <a class="" href="/components/chips.html">Chips
                     </a>
-                    <a class="" href="/design/spec/components/data-tables.html">Data tables
+                    <a class="" href="/components/data-tables.html">Data tables
                     </a>
-                    <a class="" href="/design/spec/components/dialogs.html">Dialogs
+                    <a class="" href="/components/dialogs.html">Dialogs
                     </a>
-                    <a class="" href="/design/spec/components/dividers.html">Dividers
+                    <a class="" href="/components/dividers.html">Dividers
                     </a>
-                    <a class="" href="/design/spec/components/grid-lists.html">Grid lists
+                    <a class="" href="/components/expansion-panels.html">Expansion panels
                     </a>
-                    <a class="" href="/design/spec/components/lists.html">Lists
+                    <a class="" href="/components/grid-lists.html">Grid lists
                     </a>
-                    <a class="" href="/design/spec/components/lists-controls.html">Lists: Controls
+                    <a class="" href="/components/lists.html">Lists
                     </a>
-                    <a class="" href="/design/spec/components/menus.html">Menus
+                    <a class="" href="/components/lists-controls.html">Lists: Controls
                     </a>
-                    <a class="" href="/design/spec/components/pickers.html">Pickers
+                    <a class="" href="/components/menus.html">Menus
                     </a>
-                    <a class="" href="/design/spec/components/progress-activity.html">Progress &amp; activity
+                    <a class="" href="/components/pickers.html">Pickers
                     </a>
-                    <a class="" href="/design/spec/components/selection-controls.html">Selection controls
+                    <a class="" href="/components/progress-activity.html">Progress &amp; activity
                     </a>
-                    <a class="" href="/design/spec/components/sliders.html">Sliders
+                    <a class="" href="/components/selection-controls.html">Selection controls
                     </a>
-                    <a class="" href="/design/spec/components/snackbars-toasts.html">Snackbars &amp; toasts
+                    <a class="" href="/components/sliders.html">Sliders
                     </a>
-                    <a class="" href="/design/spec/components/steppers.html">Steppers
+                    <a class="" href="/components/snackbars-toasts.html">Snackbars &amp; toasts
                     </a>
-                    <a class="" href="/design/spec/components/subheaders.html">Subheaders
+                    <a class="" href="/components/steppers.html">Steppers
                     </a>
-                    <a class="" href="/design/spec/components/tabs.html">Tabs
+                    <a class="" href="/components/subheaders.html">Subheaders
                     </a>
-                    <a class="" href="/design/spec/components/text-fields.html">Text fields
+                    <a class="" href="/components/tabs.html">Tabs
                     </a>
-                    <a class="" href="/design/spec/components/toolbars.html">Toolbars
+                    <a class="" href="/components/text-fields.html">Text fields
                     </a>
-                    <a class="" href="/design/spec/components/tooltips.html">Tooltips
+                    <a class="" href="/components/toolbars.html">Toolbars
+                    </a>
+                    <a class="" href="/components/tooltips.html">Tooltips
                     </a>
                   </dd>
                 <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">Patterns
                 </dt>
         <dd>
-                    <a class="" href="/design/spec/patterns/data-formats.html">Data formats
+                    <a class="" href="/patterns/data-formats.html">Data formats
                     </a>
-                    <a class="" href="/design/spec/patterns/empty-states.html">Empty states
+                    <a class="" href="/patterns/empty-states.html">Empty states
                     </a>
-                    <a class="" href="/design/spec/patterns/errors.html">Errors
+                    <a class="" href="/patterns/errors.html">Errors
                     </a>
-                    <a class="" href="/design/spec/patterns/gestures.html">Gestures
+                    <a class="" href="/patterns/fingerprint.html">Fingerprint
                     </a>
-                    <a class="" href="/design/spec/patterns/fingerprint.html">Fingerprint
+                    <a class="" href="/patterns/gestures.html">Gestures
                     </a>
-                    <a class="" href="/design/spec/patterns/launch-screens.html">Launch screens
+                    <a class="" href="/patterns/launch-screens.html">Launch screens
                     </a>
-                    <a class="" href="/design/spec/patterns/loading-images.html">Loading images
+                    <a class="" href="/patterns/loading-images.html">Loading images
                     </a>
-                    <a class="" href="/design/spec/patterns/navigation.html">Navigation
+                    <a class="" href="/patterns/navigation.html">Navigation
                     </a>
-                    <a class="" href="/design/spec/patterns/navigation-drawer.html">Navigation drawer
+                    <a class="" href="/patterns/navigation-drawer.html">Navigation drawer
                     </a>
-                    <a class="" href="/design/spec/patterns/navigational-transitions.html">Navigational transitions
+                    <a class="" href="/patterns/navigational-transitions.html">Navigational transitions
                     </a>
-                    <a class="" href="/design/spec/patterns/notifications.html">Notifications
+                    <a class="" href="/patterns/notifications.html">Notifications
                     </a>
-                    <a class="" href="/design/spec/patterns/permissions.html">Permissions
+                    <a class="" href="/patterns/permissions.html">Permissions
                     </a>
-                    <a class="" href="/design/spec/patterns/scrolling-techniques.html">Scrolling techniques
+                    <a class="" href="/patterns/scrolling-techniques.html">Scrolling techniques
                     </a>
-                    <a class="" href="/design/spec/patterns/search.html">Search
+                    <a class="" href="/patterns/search.html">Search
                     </a>
-                    <a class="" href="/design/spec/patterns/selection.html">Selection
+                    <a class="" href="/patterns/selection.html">Selection
                     </a>
-                    <a class="" href="/design/spec/patterns/settings.html">Settings
+                    <a class="" href="/patterns/settings.html">Settings
                     </a>
-                    <a class="" href="/design/spec/patterns/swipe-to-refresh.html">Swipe to refresh
+                    <a class="" href="/patterns/swipe-to-refresh.html">Swipe to refresh
+                    </a>
+                  </dd>
+                <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">Growth &amp; communications
+                </dt>
+        <dd>
+                    <a class="" href="/growth-communications/introduction.html">Introduction
+                    </a>
+                    <a class="" href="/growth-communications/onboarding.html">Onboarding
+                    </a>
+                    <a class="" href="/growth-communications/feature-discovery.html">Feature discovery
+                    </a>
+                    <a class="" href="/growth-communications/gesture-education.html">Gesture education
                     </a>
                   </dd>
                 <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">Usability
                 </dt>
         <dd>
-                    <a class="" href="/design/spec/usability/accessibility.html">Accessibility
+                    <a class="" href="/usability/accessibility.html">Accessibility
                     </a>
-                    <a class="" href="/design/spec/usability/bidirectionality.html">Bidirectionality
+                    <a class="" href="/usability/bidirectionality.html">Bidirectionality
                     </a>
                   </dd>
                 <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">Resources
                 </dt>
         <dd>
-                    <a class="" href="/design/spec/resources/color-palettes.html">Color palettes
+                    <a class="" href="/resources/color-palettes.html">Color palettes
                               </a>
-                    <a class="" href="/design/spec/resources/devices.html">Devices
+                    <a class="" href="/resources/devices.html">Devices
                     </a>
-                    <a class="" href="/design/spec/resources/layout-templates.html">Layout templates
+                    <a class="" href="/resources/layout-templates.html">Layout templates
                     </a>
-                    <a class="" href="/design/spec/resources/roboto-noto-fonts.html">Roboto &amp; Noto fonts
+                    <a class="" href="/resources/roboto-noto-fonts.html">Roboto &amp; Noto fonts
                     </a>
-                    <a class="" href="/design/spec/resources/sticker-sheets-icons.html">Sticker sheets &amp; icons
+                    <a class="" href="/resources/sticker-sheets-icons.html">Sticker sheets &amp; icons
                     </a>
                   </dd>
                 <dt class="qp-ui" data-qp-ui="{ 'SideNavZippy': false }">What&#39;s new
                         </dt>
         <dd>
-                    <a class="" href="/design/spec/whats-new/whats-new.html">What&#39;s new
+                    <a class="" href="/whats-new/whats-new.html">What&#39;s new
                     </a>
                   </dd>
               </dl>
@@ -272,7 +290,17 @@
 
         <div class="legal">
       <p class="copyright">Google &copy;</p>
-      <a href="http://www.google.com/intl/en/policies/privacy/">Privacy</a> &amp; <a href="http://www.google.com/intl/en/policies/terms/">Terms</a>
+      <ul>
+                  <li>
+            <a href="javascript:void(0);" onclick="try{userfeedback.api.startFeedback({'productId': '1027542', 'bucket': 'material_spec', 'locale': 'en', 'allowNonLoggedInFeedback': true});return false;}catch(e){}" class="qp-ui-side-nav-dismiss">Site feedback</a>
+          </li>
+                <li>
+          <a href="http://www.google.com/intl/en/policies/privacy/">Privacy</a>
+        </li>
+        <li>
+          <a href="http://www.google.com/intl/en/policies/terms/">Terms</a>
+        </li>
+      </ul>
     </div>
   </div>
 </div>
@@ -284,8 +312,28 @@
     <div class="chapter-content">
         
         <div class="chapter-intro">
-            <p>Color in material design is inspired by bold hues juxtaposed with muted environments, deep shadows, and bright highlights. Material takes cues from contemporary architecture, road signs, pavement marking tape, and athletic courts. Color should be unexpected and vibrant.</p>
-
+            <p>Color in material design is inspired by bold hues juxtaposed with muted environments, deep shadows, and bright highlights. </p>
+<section class="moduleD1">
+    <div class="module-body">
+    <p>Material takes cues from contemporary architecture, road signs, pavement marking tape, and athletic courts. Color should be unexpected and vibrant.</p><p><strong>Primary and accent colors </strong>can be customized to illustrate or develop your brand colors.</p><p><strong>Themes </strong>enable consistent app styling through surface shades, shadow depth, and ink opacity.</p><table class="c14"><tbody></tbody></table>
+  </div>
+  <div class="figure-group">
+    <div class="figure-row">
+            <figure class="">
+                          <div class="module-body">
+            <div class="text-box">
+              <h3 class="c5" id="h.ep2vmjdzo6l6"><span>Color schemes</span></h3><p>Primary color<br/>Secondary color<br/>Accent color<br/>Text and background colors</p>
+            </div>
+          </div>
+                        </figure>
+            <figure class="">
+                          <div class="media">
+                      <img src="//material-design.storage.googleapis.com/publish/material_v_8/material_ext_publish/0B7WCemMG6e0VczVMRE1YVlpCTHc/style_color.png" / />
+                    </div>
+                        </figure>
+          </div>
+  </div>
+</section>
       
       
     </div>
@@ -326,8 +374,8 @@
         </div>
               <div>
           <div class="modulettes">
-    <a download class="modulette download trackdl" href="//material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B0J8hsRkk91LSGx6b0w3WWpMQ1k/color_swatches.zip" title="Download color swatches">
-    <img class="icon download-icon" src="/design/spec/static/images/download_black.svg" alt="" />
+    <a download class="modulette download trackdl" href="//material-design.storage.googleapis.com/publish/material_v_8/material_ext_publish/0B0J8hsRkk91LSGx6b0w3WWpMQ1k/color_swatches.zip" title="Download color swatches">
+    <img class="icon download-icon" src="/static/images/download_black.svg" alt="" />
     <div class="info">
       <div class="title">Download color swatches</div>
       <span class="subtitle">0.02 MB (.zip)</span>
@@ -338,7 +386,7 @@
               <div>
           <div class="modulettes">
           <a class="modulette default" href="https://design.google.com/videos/palette-perfect/" title="Palette perfect">
-      <img class="icon callout-icon" src="/design/spec/static/images/callout_default.svg" alt="" />
+      <img class="icon callout-icon" src="/static/images/callout_default.svg" alt="" />
       <div class="info">
         <div class="title">Palette perfect</div>
         <span class="subtitle">A color theory video tutorial</span>
@@ -348,7 +396,7 @@
         </div>
               <div>
           <section class="module-html">
-      <link rel="stylesheet" type="text/css" href="/design/spec/static/sites/spec/css/color-palettes.css" />
+      <link rel="stylesheet" type="text/css" href="/static/sites/spec/css/color-palettes.css" />
 <div class="color-palette">
   <section class="color-group">
     <ul>
@@ -852,7 +900,7 @@ Related
               <div>
           <div class="modulettes">
           <a class="modulette android" href="http://developer.android.com/training/material/theme.html#ColorPalette" title="Customize the color palette">
-      <img class="icon callout-icon" src="/design/spec/static/images/callout_android.svg" alt="" />
+      <img class="icon callout-icon" src="/static/images/callout_android.svg" alt="" />
       <div class="info">
         <div class="title">Customize the color palette</div>
         <span class="subtitle">Define your app’s color palette.</span>
@@ -870,7 +918,7 @@ Related
     <div class="figure-row">
             <figure class="">
                           <div class="media">
-                      <img src="//material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bzhp5Z4wHba3eHpqenBOaGxjRTA/style_color_colorscheme_palette1.png" / />
+                      <img src="//material-design.storage.googleapis.com/publish/material_v_8/material_ext_publish/0Bzhp5Z4wHba3eHpqenBOaGxjRTA/style_color_colorscheme_palette1.png" / />
                     </div>
                         <figcaption>
           <div class="caption-title"></div><p>Example of a color palette using two purple hues from the primary palette and one accent green hue.</p>
@@ -878,7 +926,7 @@ Related
                 </figure>
             <figure class="">
                           <div class="media">
-                      <img src="//material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bzhp5Z4wHba3VjVncGdNZ2RKUzQ/style_color_colorscheme_palette1_example.png" / />
+                      <img src="//material-design.storage.googleapis.com/publish/material_v_8/material_ext_publish/0Bzhp5Z4wHba3VjVncGdNZ2RKUzQ/style_color_colorscheme_palette1_example.png" / />
                     </div>
                         <figcaption>
           <div class="caption-title"></div><p>Example of UI color application</p>
@@ -898,7 +946,7 @@ Related
     <div class="figure-row">
             <figure class="">
                           <div class="media">
-                      <img src="//material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7Ym1sRkstSzYtZmM/style_color_uiapplication_palette1.png" / />
+                      <img src="//material-design.storage.googleapis.com/publish/material_v_8/material_ext_publish/0Bx4BSt6jniD7Ym1sRkstSzYtZmM/style_color_uiapplication_palette1.png" / />
                     </div>
                         <figcaption>
           <p>Example of a primary color palette with variations for when a darker or lighter version of the color is needed</p>
@@ -918,7 +966,7 @@ Related
     <div class="figure-row">
             <figure class="">
                           <div class="media">
-                      <img src="//material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7MzRWOTNhVng2SkE/style_color_uiapplication_palette2.png" / />
+                      <img src="//material-design.storage.googleapis.com/publish/material_v_8/material_ext_publish/0Bx4BSt6jniD7MzRWOTNhVng2SkE/style_color_uiapplication_palette2.png" / />
                     </div>
                         <figcaption>
           <p>Example of a secondary palette with variations for when a darker or lighter version of the color is needed</p>
@@ -938,7 +986,7 @@ Related
     <div class="figure-row">
             <figure class="">
                           <div class="media">
-                      <img src="//material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsZUZqS2Z3UnlmTW8/style_color_uiapplication_accent1.png" / />
+                      <img src="//material-design.storage.googleapis.com/publish/material_v_8/material_ext_publish/0B6Okdz75tqQsZUZqS2Z3UnlmTW8/style_color_uiapplication_accent1.png" / />
                     </div>
                         <figcaption>
           <p>Floating action button using the accent color</p>
@@ -946,7 +994,7 @@ Related
                 </figure>
             <figure class="">
                           <div class="media">
-                      <img src="//material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsSEJSUHlSSVljVG8/style_color_uiapplication_accent2.png" / />
+                      <img src="//material-design.storage.googleapis.com/publish/material_v_8/material_ext_publish/0B6Okdz75tqQsSEJSUHlSSVljVG8/style_color_uiapplication_accent2.png" / />
                     </div>
                         <figcaption>
           <p>Switch using the accent color</p>
@@ -965,7 +1013,7 @@ Related
     <div class="figure-row">
             <figure class=" example do">
                           <div class="media">
-                      <img src="//material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsZFdSejhCaTNKSEk/style_color_uiapplication_accent3.png" / />
+                      <img src="//material-design.storage.googleapis.com/publish/material_v_8/material_ext_publish/0B6Okdz75tqQsZFdSejhCaTNKSEk/style_color_uiapplication_accent3.png" / />
                     </div>
                         <figcaption>
           <div class="caption-title">Do.</div><p>Only use the accent color for body text to accent a web link.</p>
@@ -973,7 +1021,7 @@ Related
                 </figure>
             <figure class=" example dont">
                           <div class="media">
-                      <img src="//material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsOUhGS3hZTzUyTEE/style_color_uiapplication_accent4.png" / />
+                      <img src="//material-design.storage.googleapis.com/publish/material_v_8/material_ext_publish/0B6Okdz75tqQsOUhGS3hZTzUyTEE/style_color_uiapplication_accent4.png" / />
                     </div>
                         <figcaption>
           <div class="caption-title">Don't.</div><p>Don’t use the accent color for body text color.</p>
@@ -992,7 +1040,7 @@ Related
     <div class="figure-row">
             <figure class=" example do">
                           <div class="media">
-                      <img src="//material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsQXQyZ2s5am1Gek0/style_color_uiapplication_accent5.png" / />
+                      <img src="//material-design.storage.googleapis.com/publish/material_v_8/material_ext_publish/0B6Okdz75tqQsQXQyZ2s5am1Gek0/style_color_uiapplication_accent5.png" / />
                     </div>
                         <figcaption>
           <div class="caption-title">Do.</div><p>Use the accent color for your primary action button and components like switches or sliders. </p>
@@ -1000,7 +1048,7 @@ Related
                 </figure>
             <figure class=" example dont">
                           <div class="media">
-                      <img src="//material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsQ2JXWEpvN1BPbHc/style_color_uiapplication_accent6.png" / />
+                      <img src="//material-design.storage.googleapis.com/publish/material_v_8/material_ext_publish/0B6Okdz75tqQsQ2JXWEpvN1BPbHc/style_color_uiapplication_accent6.png" / />
                     </div>
                         <figcaption>
           <div class="caption-title">Don't.</div><p>Don’t use the accent color for app bars or larger areas of color. Avoid using the same color for the floating action button and the background.</p>
@@ -1019,7 +1067,7 @@ Related
     <div class="figure-row">
             <figure class="">
                           <div class="media">
-                      <img src="//material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bzhp5Z4wHba3RV9VS2drR1dybTA/style_color_colorscheme_accentcolor_appbar.png" / />
+                      <img src="//material-design.storage.googleapis.com/publish/material_v_8/material_ext_publish/0Bzhp5Z4wHba3RV9VS2drR1dybTA/style_color_colorscheme_accentcolor_appbar.png" / />
                     </div>
                         <figcaption>
           <div class="caption-title"></div><p>The App bar, toolbar and system status bar can be customized using your palette accent color. In this example, the toolbar uses the 500 version of indigo, while the status bar uses the 700 version.</p>
@@ -1027,7 +1075,7 @@ Related
                 </figure>
             <figure class="">
                           <div class="media">
-                      <img src="//material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bzhp5Z4wHba3LWJDeFVQWlBsd3c/style_color_colorscheme_accentcolor_links.png" / />
+                      <img src="//material-design.storage.googleapis.com/publish/material_v_8/material_ext_publish/0Bzhp5Z4wHba3LWJDeFVQWlBsd3c/style_color_colorscheme_accentcolor_links.png" / />
                     </div>
                         <figcaption>
           <div class="caption-title"></div><p>Web links and buttons can be customized using your palette accent color. </p>
@@ -1046,7 +1094,7 @@ Related
     <div class="figure-row">
             <figure class="">
                           <div class="media">
-                      <img src="//material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bzhp5Z4wHba3aUdFNzYyV3VqbE0/style_color_colorscheme_accentcolor_textfields.png" / />
+                      <img src="//material-design.storage.googleapis.com/publish/material_v_8/material_ext_publish/0Bzhp5Z4wHba3aUdFNzYyV3VqbE0/style_color_colorscheme_accentcolor_textfields.png" / />
                     </div>
                         <figcaption>
           <div class="caption-title"></div><p>Text fields and selection controls can be customized using your palette accent color.   </p>
@@ -1054,7 +1102,7 @@ Related
                 </figure>
             <figure class="">
                           <div class="media">
-                      <img src="//material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bzhp5Z4wHba3WXdpMmJ2QlN4SUU/style_color_colorscheme_accentcolor_textselection.png" / />
+                      <img src="//material-design.storage.googleapis.com/publish/material_v_8/material_ext_publish/0Bzhp5Z4wHba3WXdpMmJ2QlN4SUU/style_color_colorscheme_accentcolor_textselection.png" / />
                     </div>
                         <figcaption>
           <div class="caption-title"></div><p>Text selection can be customized using your palette accent color. </p>
@@ -1082,7 +1130,7 @@ Related
     <div class="figure-row">
             <figure class=" example do">
                           <div class="media">
-                      <img src="//material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bzhp5Z4wHba3MmNuV3lkWm5DOUU/style_color_uiapplication_fallback1.png" / />
+                      <img src="//material-design.storage.googleapis.com/publish/material_v_8/material_ext_publish/0Bzhp5Z4wHba3MmNuV3lkWm5DOUU/style_color_uiapplication_fallback1.png" / />
                     </div>
                         <figcaption>
           <div class="caption-title">Do.</div><p>Use a fallback accent color over background colors that are too light or too dark.</p>
@@ -1090,7 +1138,7 @@ Related
                 </figure>
             <figure class=" example dont">
                           <div class="media">
-                      <img src="//material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bzhp5Z4wHba3WFRpT0FWMWVocFk/style_color_uiapplication_fallback2.png" / />
+                      <img src="//material-design.storage.googleapis.com/publish/material_v_8/material_ext_publish/0Bzhp5Z4wHba3WFRpT0FWMWVocFk/style_color_uiapplication_fallback2.png" / />
                     </div>
                         <figcaption>
           <div class="caption-title">Don't.</div><p>Don’t use the accent color over a background color if there isn’t enough contrast.</p>
@@ -1142,7 +1190,7 @@ Related
     <div class="figure-row">
             <figure class="">
                           <div class="media">
-                      <img src="//material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bzhp5Z4wHba3eVlsbkFzOEFEQWc/style_color_textandsymbols_alpha1.png" / />
+                      <img src="//material-design.storage.googleapis.com/publish/material_v_8/material_ext_publish/0Bzhp5Z4wHba3eVlsbkFzOEFEQWc/style_color_textandsymbols_alpha1.png" / />
                     </div>
                         <figcaption>
           <p>Dark text on light backgrounds</p>
@@ -1151,7 +1199,7 @@ Related
             <figure class="">
                           <div class="module-body data-table">
             <div class="table-box">
-              <table class="c12"><tbody><tr class="c6"><td class="c7" colspan="1" rowspan="1"><p><span>Dark text (#000000)</span></p></td><td class="c7" colspan="1" rowspan="1"><p><span>Opacity</span></p></td></tr><tr class="c6"><td class="c7" colspan="1" rowspan="1"><p><span>Primary text </span></p></td><td class="c7" colspan="1" rowspan="1"><p><span>87%</span></p></td></tr><tr class="c6"><td class="c7" colspan="1" rowspan="1"><p><span>Secondary text</span></p></td><td class="c7" colspan="1" rowspan="1"><p><span>54%</span></p></td></tr><tr class="c6"><td class="c7" colspan="1" rowspan="1"><p><span>Disabled text, hint text, and icons</span></p></td><td class="c7" colspan="1" rowspan="1"><p><span>38%</span></p></td></tr><tr class="c6"><td class="c7" colspan="1" rowspan="1"><p><span>Dividers</span></p></td><td class="c7" colspan="1" rowspan="1"><p><span>12%</span></p></td></tr></tbody></table>
+              <table class="c12"><tbody><tr class="c5"><td class="c10" colspan="1" rowspan="1"><p><span>Dark text (#000000)</span></p></td><td class="c10" colspan="1" rowspan="1"><p><span>Opacity</span></p></td></tr><tr class="c5"><td class="c10" colspan="1" rowspan="1"><p><span>Primary text </span></p></td><td class="c10" colspan="1" rowspan="1"><p><span>87%</span></p></td></tr><tr class="c5"><td class="c10" colspan="1" rowspan="1"><p><span>Secondary text</span></p></td><td class="c10" colspan="1" rowspan="1"><p><span>54%</span></p></td></tr><tr class="c5"><td class="c10" colspan="1" rowspan="1"><p><span>Disabled text, hint text, and icons</span></p></td><td class="c10" colspan="1" rowspan="1"><p><span>38%</span></p></td></tr><tr class="c5"><td class="c10" colspan="1" rowspan="1"><p><span>Dividers</span></p></td><td class="c10" colspan="1" rowspan="1"><p><span>12%</span></p></td></tr></tbody></table>
             </div>
           </div>
                         </figure>
@@ -1162,13 +1210,13 @@ Related
               <div>
           <section class="moduleD1">
     <div class="module-body">
-    <h4>White text on dark backgrounds</h4><p>The table values relay relative levels of importance for white text on dark backgrounds.</p>
+    <h4>White text on dark backgrounds</h4><p>The table values relay relative levels of importance for white text on dark backgrounds.</p><p>White text appearing on colored backgrounds should do so at an opacity of 100%.</p>
   </div>
   <div class="figure-group">
     <div class="figure-row">
             <figure class="">
                           <div class="media">
-                      <img src="//material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bzhp5Z4wHba3MEV0TXVja0pMSWs/style_color_textandsymbols_alpha2.png" / />
+                      <img src="//material-design.storage.googleapis.com/publish/material_v_8/material_ext_publish/0Bzhp5Z4wHba3MEV0TXVja0pMSWs/style_color_textandsymbols_alpha2.png" / />
                     </div>
                         <figcaption>
           <p>White text on dark backgrounds</p>
@@ -1177,7 +1225,7 @@ Related
             <figure class="">
                           <div class="module-body data-table">
             <div class="table-box">
-              <table class="c12"><tbody><tr class="c6"><td class="c7" colspan="1" rowspan="1"><p><span>Light text (#FFFFFF)</span></p></td><td class="c7" colspan="1" rowspan="1"><p><span>Opacity</span></p></td></tr><tr class="c6"><td class="c7" colspan="1" rowspan="1"><p><span>Primary text </span></p></td><td class="c7" colspan="1" rowspan="1"><p><span>100%</span></p></td></tr><tr class="c6"><td class="c7" colspan="1" rowspan="1"><p><span>Secondary text</span></p></td><td class="c7" colspan="1" rowspan="1"><p><span>70%</span></p></td></tr><tr class="c6"><td class="c7" colspan="1" rowspan="1"><p><span>Disabled text, hint text, and icons</span></p></td><td class="c7" colspan="1" rowspan="1"><p><span>50%</span></p></td></tr><tr class="c6"><td class="c7" colspan="1" rowspan="1"><p><span>Dividers</span></p></td><td class="c7" colspan="1" rowspan="1"><p><span>12%</span></p></td></tr></tbody></table>
+              <table class="c12"><tbody><tr class="c5"><td class="c10" colspan="1" rowspan="1"><p><span>Light text (#FFFFFF)</span></p></td><td class="c10" colspan="1" rowspan="1"><p><span>Opacity</span></p></td></tr><tr class="c5"><td class="c10" colspan="1" rowspan="1"><p><span>Primary text </span></p></td><td class="c10" colspan="1" rowspan="1"><p><span>100%</span></p></td></tr><tr class="c5"><td class="c10" colspan="1" rowspan="1"><p><span>Secondary text</span></p></td><td class="c10" colspan="1" rowspan="1"><p><span>70%</span></p></td></tr><tr class="c5"><td class="c10" colspan="1" rowspan="1"><p><span>Disabled text, hint text, and icons</span></p></td><td class="c10" colspan="1" rowspan="1"><p><span>50%</span></p></td></tr><tr class="c5"><td class="c10" colspan="1" rowspan="1"><p><span>Dividers</span></p></td><td class="c10" colspan="1" rowspan="1"><p><span>12%</span></p></td></tr></tbody></table>
             </div>
           </div>
                         </figure>
@@ -1194,7 +1242,7 @@ Related
     <div class="figure-row">
             <figure class=" example dont">
                           <div class="media">
-                      <img src="//material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bzhp5Z4wHba3SzIxbkJudGdwYlU/style_color_uiapplication_alpha3.png" / />
+                      <img src="//material-design.storage.googleapis.com/publish/material_v_8/material_ext_publish/0Bzhp5Z4wHba3SzIxbkJudGdwYlU/style_color_uiapplication_alpha3.png" / />
                     </div>
                         <figcaption>
           <div class="caption-title">Don't.</div><p>Grey text (hex value of #727272) on a white background becomes hard to read if the background color changes to magenta.</p>
@@ -1202,7 +1250,7 @@ Related
                 </figure>
             <figure class=" example do">
                           <div class="media">
-                      <img src="//material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bzhp5Z4wHba3NHNzYlF4QWlTbjQ/style_color_uiapplication_alpha4.png" / />
+                      <img src="//material-design.storage.googleapis.com/publish/material_v_8/material_ext_publish/0Bzhp5Z4wHba3NHNzYlF4QWlTbjQ/style_color_uiapplication_alpha4.png" / />
                     </div>
                         <figcaption>
           <div class="caption-title">Do.</div><p>Black text, set to a 0.54 opacity, ensures a minimum degree of legibility and color harmony with new background colors.</p>
@@ -1216,26 +1264,24 @@ Related
           <section class="moduleD1">
       <h3>Icons, dividers, and other elements</h3>
     <div class="module-body">
-    <p>Elements like icons and dividers benefit from having a hex value of black or white (rather than a specific color) so that they work on backgrounds of any color.</p>
+    <p>Elements like icons and dividers benefit from having a hex value of black or white (rather than a specific color) at 38% opacity so that they work on backgrounds of any color.</p>
   </div>
   <div class="figure-group">
     <div class="figure-row">
             <figure class="">
-                          <div class="media">
-                      <img src="//material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bzhp5Z4wHba3TkR4MVpNMHVBRVU/style_color_textandsymbols_iconsdividers_light.png" / />
-                    </div>
-                        <figcaption>
-          <div class="caption-title"></div>
-        </figcaption>
-                </figure>
+                          <div class="module-body data-table">
+            <div class="table-box">
+              <table class="c12"><tbody><tr class="c5"><td class="c11" colspan="1" rowspan="1"><p><span>Dark icons (#000000)</span></p></td><td class="c11" colspan="1" rowspan="1"><p><span>Opacity</span></p></td></tr><tr class="c5"><td class="c11" colspan="1" rowspan="1"><p><span>Active icon</span></p></td><td class="c11" colspan="1" rowspan="1"><p><span>54%</span></p></td></tr><tr class="c5"><td class="c11" colspan="1" rowspan="1"><p><span>Inactive icon</span></p></td><td class="c11" colspan="1" rowspan="1"><p><span>38%</span></p></td></tr></tbody></table>
+            </div>
+          </div>
+                        </figure>
             <figure class="">
-                          <div class="media">
-                      <img src="//material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bzhp5Z4wHba3TzJsVHg2Ulh4UlU/style_color_textandsymbols_iconsdividers_dark.png" / />
-                    </div>
-                        <figcaption>
-          <div class="caption-title"></div>
-        </figcaption>
-                </figure>
+                          <div class="module-body data-table">
+            <div class="table-box">
+              <table class="c12"><tbody><tr class="c5"><td class="c11" colspan="1" rowspan="1"><p><span>Light icons (#FFFFFF)</span></p></td><td class="c11" colspan="1" rowspan="1"><p><span>Opacity</span></p></td></tr><tr class="c5"><td class="c11" colspan="1" rowspan="1"><p><span>Active icon</span></p></td><td class="c11" colspan="1" rowspan="1"><p><span>100%</span></p></td></tr><tr class="c5"><td class="c11" colspan="1" rowspan="1"><p><span>Inactive icon</span></p></td><td class="c11" colspan="1" rowspan="1"><p><span>50%</span></p></td></tr></tbody></table>
+            </div>
+          </div>
+                        </figure>
           </div>
   </div>
 </section>
@@ -1263,8 +1309,8 @@ Related
         </div>
               <div>
           <div class="modulettes">
-    <a download class="modulette download trackdl" href="//material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B0J8hsRkk91LOGV6Y3V2WFhhemM/stickersheet_uielements.ai" title="Download themes">
-    <img class="icon download-icon" src="/design/spec/static/images/download_black.svg" alt="" />
+    <a download class="modulette download trackdl" href="//material-design.storage.googleapis.com/publish/material_v_8/material_ext_publish/0B0J8hsRkk91LOGV6Y3V2WFhhemM/stickersheet_uielements.ai" title="Download themes">
+    <img class="icon download-icon" src="/static/images/download_black.svg" alt="" />
     <div class="info">
       <div class="title">Download themes</div>
       <span class="subtitle">1.23 MB (.ai)</span>
@@ -1282,15 +1328,15 @@ Related
     <div class="figure-row">
             <figure class="">
                           <div class="media">
-                      <img src="//material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7bmd5SG5WU0tzRHc/style_color_themes_light1.png" / />
+                      <img src="//material-design.storage.googleapis.com/publish/material_v_8/material_ext_publish/0Bx4BSt6jniD7bmd5SG5WU0tzRHc/style_color_themes_light1.png" / />
                     </div>
                         <figcaption>
-          <p>Light theme palette</p>
+          <p id="h.fxflmubpem3k">Light theme palette</p>
         </figcaption>
                 </figure>
             <figure class="">
                           <div class="media">
-                      <img src="//material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7WVQ2WXFLeUtxSlE/style_color_themes_light2.png" / />
+                      <img src="//material-design.storage.googleapis.com/publish/material_v_8/material_ext_publish/0Bx4BSt6jniD7WVQ2WXFLeUtxSlE/style_color_themes_light2.png" / />
                     </div>
                         <figcaption>
           <p>UI application</p>
@@ -1310,18 +1356,18 @@ Related
     <div class="figure-row">
             <figure class="">
                           <div class="media">
-                      <img src="//material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7VHFTNDBGODlvakk/style_color_themes_dark1.png" / />
+                      <img src="//material-design.storage.googleapis.com/publish/material_v_8/material_ext_publish/0Bx4BSt6jniD7VHFTNDBGODlvakk/style_color_themes_dark1.png" / />
                     </div>
                         <figcaption>
-          <p>Dark theme palette</p>
+          <p id="h.fxflmubpem3k-1">Dark theme palette</p>
         </figcaption>
                 </figure>
             <figure class="">
                           <div class="media">
-                      <img src="//material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7T2gwQkR2dWZWdFk/style_color_themes_dark2.png" / />
+                      <img src="//material-design.storage.googleapis.com/publish/material_v_8/material_ext_publish/0Bx4BSt6jniD7T2gwQkR2dWZWdFk/style_color_themes_dark2.png" / />
                     </div>
                         <figcaption>
-          <p>UI application</p>
+          <p id="h.5xw4tdy25hko-2">UI application</p>
         </figcaption>
                 </figure>
           </div>
@@ -1336,7 +1382,7 @@ Related
               <div>
           <div class="modulettes">
           <a class="modulette android" href="http://developer.android.com/training/material/theme.html" title="Using the Material Theme">
-      <img class="icon callout-icon" src="/design/spec/static/images/callout_android.svg" alt="" />
+      <img class="icon callout-icon" src="/static/images/callout_android.svg" alt="" />
       <div class="info">
         <div class="title">Using the Material Theme</div>
         <span class="subtitle">Customize the design to your brand identity.</span>
@@ -1354,20 +1400,20 @@ Related
 
     <footer>
   <div class="footer-grid">
-    <div class="footer-L section-animation color-purple">&nbsp;</div>
-    <div class="footer-grid-L section-animation color-purple">
-            <a class="footer-text" href="/design/spec/animation/delightful-details.html">
+    <div class="footer-L section-motion color-purple">&nbsp;</div>
+    <div class="footer-grid-L section-motion color-purple">
+            <a class="footer-text" href="/motion/creative-customization.html">
         <i class="material-icons arrow-L">arrow_back</i>
         <span class="direction">Previous</span>
         <div>
-                      Animation
+                      Motion
                   </div>
       </a>
           </div>
 
     <div class="footer-R section-style color-teal">&nbsp;</div>
     <div class="footer-grid-R section-style color-teal">
-            <a class="footer-text" href="/design/spec/style/icons.html">
+            <a class="footer-text" href="/style/icons.html">
         <i class="material-icons arrow-R">arrow_forward</i>
         <span class="direction">Next</span>
         <div>
@@ -1379,7 +1425,8 @@ Related
   </div>
 </footer>
     <script src="//www.gstatic.com/external_hosted/picturefill/picturefill.min.js"></script>
-    <script src="/design/spec/static/js/main.js"></script>
+    <script src="/static/js/main.js"></script>
+              <script src="//www.gstatic.com/feedback/api.js"></script>
     
   </body>
 

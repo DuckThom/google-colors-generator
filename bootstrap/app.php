@@ -1,5 +1,7 @@
 <?php
 
+namespace App;
+
 define('BASE_PATH', realpath(__DIR__ . "/../"));
 
 /**
@@ -22,7 +24,7 @@ class Application extends BaseApplication
     /**
      * Package version
      */
-    const VERSION = '0.2';
+    const VERSION = '1.0';
 
     public function __construct()
     {
@@ -38,7 +40,7 @@ $application = new Application();
 /**
  * Register the commands
  */
-foreach (App\Console\Kernel::$commands as $command) {
+foreach (Console\Kernel::$commands as $command) {
     $application->add(new $command);
 }
 

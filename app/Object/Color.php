@@ -6,10 +6,21 @@
  */
 class Color {
 
+    /**
+     * Strength of the color
+     *
+     * @var string
+     */
     private $weight;
+
+    /**
+     * The hex code representing the color
+     *
+     * @var string
+     */
     private $color;
 
-    public function __construct(string $weight, string $color)
+    public function __construct($weight, $color)
     {
         $this->weight = $weight;
         $this->color = $color;
@@ -21,7 +32,7 @@ class Color {
      * @param string $color
      * @return Color
      */
-    public function setColor(string $color): Color
+    public function setColor($color)
     {
         $this->color = $color;
 
@@ -33,7 +44,7 @@ class Color {
      *
      * @return string
      */
-    public function getColor(): string
+    public function getColor()
     {
         return $this->color;
     }
@@ -43,7 +54,7 @@ class Color {
      *
      * @return string
      */
-    public function getWeight(): string
+    public function getWeight()
     {
         return $this->weight;
     }

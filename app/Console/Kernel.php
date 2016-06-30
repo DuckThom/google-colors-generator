@@ -12,7 +12,7 @@ class Kernel {
      * @var array
      */
     public static $commands = [
-        Commands\Generate::class,
+        Commands\GenerateStylesheet::class,
     ];
 
 }
